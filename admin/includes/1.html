@@ -1,0 +1,274 @@
+
+<<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+  
+<?php
+
+$yourGmailAddress = 'iiucbees@gmail.com';
+$yourGmailPassword = '123456bees';
+require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="sumit kumar">
+    <title>admin-template</title>
+    <link href="resources/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="resources/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="resources/css/contact.css" rel="stylesheet" type="text/css">
+
+    <script src="resources/js/jquery.js"></script>
+
+    <script src="resources/js/bootstrap.js"></script>
+    <script src="resources/https://use.fontawesome.com/07b0ce5d10.js"></script>
+</head>
+
+<body>
+
+<?php /*require_once("includes/navigation.php"); */?>
+
+<!--Contact Us   start-->
+<div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="h1 text-center">
+                    Contact us
+                    <small>Feel free to contact us</small>
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Name</label>
+                                <input type="text" class="form-control" name="name"  placeholder="Enter name"
+                                       required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address</label>
+                                <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                    <input type="email" class="form-control" name="ëmail" placeholder="Enter email"
+                                           required="required"/></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">
+                                    Subject</label>
+                               <!--  <select id="subject" name="subject" class="form-control" required="required">
+                                    <option value="na" selected="">Choose One:</option>
+                                    <option value="service">General Customer Service</option>
+                                    <option value="suggestions">Suggestions</option>
+                                    <option value="product">Product Support</option>
+                                </select> -->
+                                 <input type="text" class="form-control" name="subject" placeholder="Enter subject">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Message</label>
+                                <textarea name="body" id="message" class="form-control" rows="9" cols="25"
+                                          required="required"
+                                          placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-primary" value="send message"></input>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form>
+                <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                <address>
+                    <strong>IIUC BEES LTD.</strong><br>
+                    <br>
+                    Andorkilaa, Chittagong, Bangladesh<br>
+                    <abbr title="Phone">
+                        Phone</abbr>
+                    +8801521487682
+
+                </address>
+                <address>
+                    <strong></strong><br>
+                    <a href="mailto:#">iiucbees@gmail.com</a>
+                </address>
+            </form>
+        </div>
+    </div>
+</div>
+<!--Contact Us   end-->
+<!--Footer Start-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 footer-col">
+                <div class="logofooter"> IIUC BEES</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p><i class="fa fa-map-pin"></i> Chittagong, Bangladesh</p>
+                <p><i class="fa fa-phone"></i> Phone (Bd) : +880 1521487511</p>
+                <p><i class="fa fa-envelope"></i> E-mail : iiucbees@developer.com</p>
+
+            </div>
+            <div class="col-md-3 col-sm-6 footer-col">
+                <h6 class="heading7">GENERAL LINKS</h6>
+                <ul class="footer-ul">
+                    <li><a href="#"> Career</a></li>
+                    <li><a href="#"> Privacy Policy</a></li>
+                    <li><a href="#"> Terms & Conditions</a></li>
+                    <li><a href="#"> Client Gateway</a></li>
+                    <li><a href="#"> Ranking</a></li>
+                    <li><a href="#"> Case Studies</a></li>
+                    <li><a href="#"> Frequently Ask Questions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-col">
+                <h6 class="heading7">LATEST POST</h6>
+                <div class="post">
+                    <p>best turism site in bangladesh and so much helpfull for the traveler<span>july 3,2017</span></p>
+                    <p>best turism site in bangladesh and so much helpfull for the traveler<span>july 3,2017</span></p>
+                    <p>best turism site in bangladesh and so much helpfull for the traveler<span>july 3,2017</span></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-col">
+                <h6 class="heading7">Social Media</h6>
+                <ul class="footer-social">
+                    <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright">
+    <div class="container">
+        <div class="col-md-6">
+            <p>© 2016 - All Rights with prabuuideveloper</p>
+        </div>
+        <div class="col-md-6">
+            <ul class="bottom_ul">
+                <li><a href="#">prabuuideveloper.com</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Faq's</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--email setting code-->
+<?php
+if(isset($_REQUEST['email'])&&isset($_REQUEST['subject'])) {
+
+    date_default_timezone_set('Etc/UTC');
+
+    //Create a new PHPMailer instance
+    $mail = new PHPMailer;
+
+    $mail->SMTPOptions = array(
+        'ssl' => array(
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+            'allow_self_signed' => true
+        )
+    );
+    //Tell PHPMailer to use SMTP
+    $mail->isSMTP();
+    //Enable SMTP debugging
+    // 0 = off (for production use)
+    // 1 = client messages
+    // 2 = client and server messages
+    $mail->SMTPDebug = 0;
+    //Ask for HTML-friendly debug output
+    $mail->Debugoutput = 'html';
+    //Set the hostname of the mail server
+    $mail->Host = 'smtp.gmail.com';
+    // use
+    // $mail->Host = gethostbyname('smtp.gmail.com');
+    // if your network does not support SMTP over IPv6
+    //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+    $mail->Port = 587; //587
+    //Set the encryption system to use - ssl (deprecated) or tls
+    $mail->SMTPSecure = 'tls'; //tls
+    //Whether to use SMTP authentication
+    $mail->SMTPAuth = true;
+    //Username to use for SMTP authentication - use full email address for gmail
+    $mail->Username = $yourGmailAddress;
+    //Password to use for SMTP authentication
+    $mail->Password = $yourGmailPassword;
+    //Set who the message is to be sent from
+    $mail->setFrom($yourGmailAddress, 'BITM PHP');
+    //Set an alternative reply-to address
+    $mail->addReplyTo($yourGmailAddress, 'BITM PHP');
+    //Set who the message is to be sent to
+
+    //echo $_REQUEST['email']; die();
+
+    $mail->addAddress($_REQUEST['email'], $_REQUEST['name']);
+    //Set the subject line
+    $mail->Subject = $_REQUEST['subject'];
+    //Read an HTML message body from an external file, convert referenced images to embedded,
+    //convert HTML into a basic plain-text alternative body
+    //$mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
+    //Replace the plain text body with one created manually
+    $mail->AltBody = 'This is a plain-text message body';
+
+
+    ////$mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
+
+    $mail->Body = $_REQUEST['message'];
+
+
+//send the message, check for errors
+    if (!$mail->send()) {
+        echo "Mailer Error: " . $mail->ErrorInfo;
+    }
+    else {
+        echo "Message sent!";
+    }
+
+}
+
+
+?>
+
+<!--Footer End-->
+</body>
+
+</html>
+
+
+
+</body>
+</html>
